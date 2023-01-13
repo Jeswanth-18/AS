@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashrita Instruments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                    <select style=" margin-top: 10%;" >
+                        <option value="">Finanancial Year</option>
+                        <option value="">2021-2022</option>
+                        <option value="">2022-2023</option>
+                        <option value="">2023-2024</option>
+                        <option value="">2024-2025</option>
+                        <option value="">2025-2026</option>
+                        <option value="">2026-2027</option>
+                        <option value="">2027-2028</option>
+                        <option value="">2028-2029</option>
+                        <option value="">2029-2030</option>
+                    </select>
+                </div>
+                <div class="col-lg-4 col-sm-2"></div>
+                <div class="col-lg-4 col-sm-5">
+                     No Of Projects <input type="text" style="width: 100px; margin-top: 10%;">
+                </div>
+            </div>
+
+        <div style="margin-top: 5%;">
+            <div><b>Quarter Q1</b></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">S.no</th>
+                          <th scope="col">Name of the Project</th>
+                          <th scope="col">Project Value</th>
+                          <th scope="col">Status</th>
+
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td> </td>
+                          <td></td>
+                          <td>
+                            <select id="drop1" onchange="drop1();">
+                                <option value="d1v1">Status</option>
+                                <option value="d1v2">Ongoing</option>
+                                <option value="d1v3">Still not Started</option>
+                                <option value="d1v4">Completed</option>
+                            </select>
+                            <div id="date1" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop2" onchange="drop2();">
+                                <option value="d2v1">Status</option>
+                                <option value="d2v2">Ongoing</option>
+                                <option value="d2v3">Still not Started</option>
+                                <option value="d2v4">Completed</option>
+                            </select>
+                            <div id="date2" style="display: none;"><input type="date"></input></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop3" onchange="drop3();">
+                                <option value="d3v1">Status</option>
+                                <option value="d3v2">Ongoing</option>
+                                <option value="d3v3">Still not Started</option>
+                                <option value="d3v4">Completed</option>
+                            </select>
+                            <div id="date3" style="display: none;"><input type="date"></input></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div style="margin-top: 5%;">
+            <div><b>Quarter Q2</b></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">S.no</th>
+                          <th scope="col">Name of the Project</th>
+                          <th scope="col">Project Value</th>
+                          <th scope="col">Status</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td> </td>
+                          <td></td>
+                          <td>
+                            <select id="drop4" onchange="drop4();">
+                                <option value="d4v1">Status</option>
+                                <option value="d4v2">Ongoing</option>
+                                <option value="d4v3">Still not Started</option>
+                                <option value="d4v4">Completed</option>
+                            </select>
+                            <div id="date4" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop5" onchange="drop5();">
+                                <option value="d5v1">Status</option>
+                                <option value="d5v2">Ongoing</option>
+                                <option value="d5v3">Still not Started</option>
+                                <option value="d5v4">Completed</option>
+                            </select>
+                            <div id="date5" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop6" onchange="drop6();">
+                                <option value="d6v1">Status</option>
+                                <option value="d6v2">Ongoing</option>
+                                <option value="d6v3">Still not Started</option>
+                                <option value="d6v4">Completed</option>
+                            </select>
+                            <div id="date6" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div style="margin-top: 5%;">
+            <div><b>Quarter Q3</b></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">S.no</th>
+                          <th scope="col">Name of the Project</th>
+                          <th scope="col">Project Value</th>
+                          <th scope="col">Status</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td> </td>
+                          <td></td>
+                          <td>
+                            <select id="drop7" onchange="drop7();">
+                                <option value="d7v1">Status</option>
+                                <option value="d7v2">Ongoing</option>
+                                <option value="d7v3">Still not Started</option>
+                                <option value="d7v4">Completed</option>
+                            </select>
+                            <div id="date7" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop8" onchange="drop8();">
+                                <option value="d8v1">Status</option>
+                                <option value="d8v2">Ongoing</option>
+                                <option value="d8v3">Still not Started</option>
+                                <option value="d8v4">Completed</option>
+                            </select>
+                            <div id="date8" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop9" onchange="drop9();">
+                                <option value="d9v1">Status</option>
+                                <option value="d9v2">Ongoing</option>
+                                <option value="d9v3">Still not Started</option>
+                                <option value="d9v4">Completed</option>
+                            </select>
+                            <div id="date9" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div style="margin-top: 5%;">
+            <div><b>Quarter Q4</b></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">S.no</th>
+                          <th scope="col">Name of the Project</th>
+                          <th scope="col">Project Value</th>
+                          <th scope="col">Status</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td> </td>
+                          <td></td>
+                          <td>
+                            <select id="drop10" onchange="drop10();">
+                                <option value="d10v1">Status</option>
+                                <option value="d10v2">Ongoing</option>
+                                <option value="d10v3">Still not Started</option>
+                                <option value="d10v4">Completed</option>
+                            </select>
+                            <div id="date10" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop11" onchange="drop11();">
+                                <option value="d11v1">Status</option>
+                                <option value="d11v2">Ongoing</option>
+                                <option value="d11v3">Still not Started</option>
+                                <option value="d11v4">Completed</option>
+                            </select>
+                            <div id="date11" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <select id="drop12" onchange="drop12();">
+                                <option value="d12v1">Status</option>
+                                <option value="d12v2">Ongoing</option>
+                                <option value="d12v3">Still not Started</option>
+                                <option value="d12v4">Completed</option>
+                            </select>
+                            <div id="date12" style="display: none;"><input type="date"></input></div>
+                            </td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div style="text-align: center;margin-top: 3%;margin-bottom: 5%;"><input type="button" value="View" style="margin-right: 5%;" class="btn btn-primary"><input type="button" value="Download" class="btn btn-primary"></div>
+        
+
+        </div>
+    </div>
+    <script>
+        if(cp){
+            document.getElementById("c").style.display="block";
+        }
+
+        function drop1(){
+          drop=document.getElementById("drop1").value;
+          if(drop=="d1v4"){
+              document.getElementById("date1").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date1").style.display="none";
+          }
+        }
+        function drop2(){
+          drop=document.getElementById("drop2").value;
+          if(drop=="d2v4"){
+              document.getElementById("date2").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date2").style.display="none";
+          }
+        }
+        function drop3(){
+          drop=document.getElementById("drop3").value;
+          if(drop=="d3v4"){
+              document.getElementById("date3").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date3").style.display="none";
+          }
+        }
+        function drop4(){
+          drop=document.getElementById("drop4").value;
+          if(drop=="d4v4"){
+              document.getElementById("date4").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date4").style.display="none";
+          }
+        }
+        function drop5(){
+          drop=document.getElementById("drop5").value;
+          if(drop=="d5v4"){
+              document.getElementById("date5").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date5").style.display="none";
+          }
+        }
+        function drop6(){
+          drop=document.getElementById("drop6").value;
+          if(drop=="d6v4"){
+              document.getElementById("date6").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date6").style.display="none";
+          }
+        }
+        function drop7(){
+          drop=document.getElementById("drop7").value;
+          if(drop=="d7v4"){
+              document.getElementById("date7").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date7").style.display="none";
+          }
+        }
+        function drop8(){
+          drop=document.getElementById("drop8").value;
+          if(drop=="d8v4"){
+              document.getElementById("date8").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date8").style.display="none";
+          }
+        }
+        function drop9(){
+          drop=document.getElementById("drop9").value;
+          if(drop=="d9v4"){
+              document.getElementById("date9").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date9").style.display="none";
+          }
+        }
+        function drop10(){
+          drop=document.getElementById("drop10").value;
+          if(drop=="d10v4"){
+              document.getElementById("date10").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date10").style.display="none";
+          }
+        }
+        function drop11(){
+          drop=document.getElementById("drop11").value;
+          if(drop=="d11v4"){
+              document.getElementById("date11").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date11").style.display="none";
+          }
+        }
+        function drop12(){
+          drop=document.getElementById("drop12").value;
+          if(drop=="d12v4"){
+              document.getElementById("date12").style.display="inline-block";
+          }
+          else{
+            document.getElementById("date12").style.display="none";
+          }
+        }
+    </script>
+</body>
+</html>
